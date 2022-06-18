@@ -1,7 +1,7 @@
 {
-  "name": "@leonimurilo/test-publish-ui-lib",
+  "name": "leoni-test-publish-ui-lib",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/leonimurilo"
+    "registry": "https://registry.npmjs.org"
   },
   "version": "1.0.0",
   "description": "",
@@ -12,7 +12,8 @@
   ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "publish": "npm publish --access public"
   },
   "author": "",
   "license": "ISC",
