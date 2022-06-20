@@ -65,6 +65,7 @@
     "@patternfly/react-styles": "^4.71.3",
     "react": "^17.0.0"
   },
+  "optionalDependencies": { "fsevents": "*" },
   "repository": {
     "type": "git",
     "url": "https://github.com/leonimurilo/test-publish-ui-lib.git"
