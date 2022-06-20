@@ -49,7 +49,7 @@ jobs:
   publish-storybook:
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/master' }}
-    needs: [publish]
+    needs: [publish-release]
 
     steps: 
     - uses: actions/checkout@v3
