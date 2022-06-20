@@ -24,7 +24,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        # cache: 'npm'
+        cache: 'npm'
     - run: npm ci
     - run: npm test
 
@@ -39,6 +39,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'npm'
     - run: npm ci
     - run: npm run rollup
     - run: npm run semantic-release
@@ -57,6 +58,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'npm'
     - run: npm ci
     - run: npm run build-storybook
     - name: Deploy Storybook docs
