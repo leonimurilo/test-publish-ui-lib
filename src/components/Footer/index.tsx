@@ -6,7 +6,7 @@ export interface FooterProps {
 }
 
 const Footer = (props: FooterProps) => {
-  return <div>
+  return <div className="my-test-css">
     <p>My test 1</p>
     <p>{props.label}</p>
   </div>;
