@@ -10,29 +10,29 @@ on:
     branches: '*'
 
 jobs:
-  tests:
-    runs-on: ${{ matrix.os }}
+  # tests:
+  #   runs-on: ${{ matrix.os }}
 
-    strategy:
-      matrix:
-        node-version: [16.15.0]
-        # os: [ubuntu-latest, macOS-latest]
-        os: [ubuntu-latest]
+  #   strategy:
+  #     matrix:
+  #       node-version: [16.15.0]
+  #       # os: [ubuntu-latest, macOS-latest]
+  #       os: [ubuntu-latest]
 
-    steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm test
+  #   steps:
+  #   - uses: actions/checkout@v3
+  #   - name: Use Node.js ${{ matrix.node-version }}
+  #     uses: actions/setup-node@v3
+  #     with:
+  #       node-version: ${{ matrix.node-version }}
+  #       cache: 'npm'
+  #   - run: npm ci
+  #   - run: npm test
 
   publish-release:
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/master' }}
-    needs: [tests]
+    # needs: [tests]
 
     steps: 
     - uses: actions/checkout@v3
