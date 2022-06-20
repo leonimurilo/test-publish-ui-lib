@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.15.0]
+        node-version: [12]
         # os: [ubuntu-latest, macOS-latest]
         os: [ubuntu-latest]
 
@@ -32,7 +32,7 @@ jobs:
   publish-release:
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/master' }}
-    # needs: [tests]
+    needs: [tests]
 
     steps: 
     - uses: actions/checkout@v3
@@ -47,21 +47,21 @@ jobs:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  # publish-storybook:
-  #   runs-on: ubuntu-latest
-  #   if: ${{ github.ref == 'refs/heads/master' }}
-  #   needs: [publish-release]
+  publish-storybook:
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/master' }}
+    needs: [publish-release]
 
-  #   steps: 
-  #   - uses: actions/checkout@v3
-  #   - name: Use Node.js ${{ matrix.node-version }}
-  #     uses: actions/setup-node@v3
-  #     with:
-  #       node-version: ${{ matrix.node-version }}
-  #   - run: npm ci
-  #   - run: npm run build-storybook
-  #   - name: Deploy Storybook docs
-  #     uses: JamesIves/github-pages-deploy-action@3.6.2
-  #     with:
-  #       branch: gh-pages
-  #       folder: storybook-static # output folder from `npm run build-storybook`
+    steps: 
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm ci
+    - run: npm run build-storybook
+    - name: Deploy Storybook docs
+      uses: JamesIves/github-pages-deploy-action@3.6.2
+      with:
+        branch: gh-pages
+        folder: storybook-static output folder from `npm run build-storybook`
