@@ -5,7 +5,10 @@ export interface FooterProps {
 }
 
 const Footer = (props: FooterProps) => {
-  return <div>{props.label}</div>;
+  return <div>
+    <p>My test 1</p>
+    <p>{props.label}</p>
+  </div>;
 };
 
 export default Footer;
