@@ -39,7 +39,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    # - run: npm ci
+    - run: npm ci
     - run: npm run rollup
     - run: npm run semantic-release
       env: 
@@ -57,7 +57,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    # - run: npm ci
+    - run: npm ci
     - run: npm run build-storybook
     - name: Deploy Storybook docs
       uses: JamesIves/github-pages-deploy-action@3.6.2
