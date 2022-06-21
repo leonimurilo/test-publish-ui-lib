@@ -31,6 +31,8 @@ export default [
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
         modules: true,
+        autoModules: true,
+        // minimize: true,
       }),
       terser(),
     ],
