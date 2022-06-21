@@ -22,7 +22,9 @@
     "start": "npm run storybook",
     "lint": "eslint --config ./.eslintrc.json  .",
     "lint:fix": "eslint --config ./.eslintrc.json  . --fix",
-    "format": "prettier --write --config ./.prettierrc"
+    "format": "prettier --write --config ./.prettierrc",
+    "link": "npm link",
+    "link:list": "npm ls -g --depth=0 --link=true"
   },
   "author": "",
   "license": "ISC",
