@@ -7,7 +7,7 @@ export interface FooterProps {
 
 const Footer = (props: FooterProps) => (
   <div className={style.myTestClass}>
-    <p>My test 1</p>
+    <p>My test PR</p>
     <p>{props.label}</p>
   </div>
 );
