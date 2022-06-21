@@ -1,0 +1,13 @@
+{
+	"recommendations": [
+		"formulahendry.auto-rename-tag",
+        "naumovs.color-highlight",
+        "EditorConfig.EditorConfig",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "Cardinal90.multi-cursor-case-preserve",
+        "meganrogge.template-string-converter",
+        "KnisterPeter.vscode-commitizen",
+        "christian-kohler.npm-intellisense"
+	]
+}
