@@ -1,17 +1,17 @@
-import React from 'react'
-import { render, screen } from '@testing-library/react'
+import React from 'react';
+import { render, screen } from '@testing-library/react';
 
-import Footer from './index'
+import Footer from './index';
 
 describe('Footer', () => {
   it('renders the label text correctly', () => {
-    const label = 'Hello world!'
-    render(<Footer label={label} />)
-    expect(screen.getByText(label)).toBeInTheDocument()
-  })
+    const label = 'Hello world!';
+    render(<Footer label={label} />);
+    expect(screen.getByText(label)).toBeInTheDocument();
+  });
 
   it('renders the title correctly', () => {
-    render(<Footer label='Hello world!' />)
-    expect(screen.getByText('My test 1')).toBeInTheDocument()
-  })
-})
+    render(<Footer label="Hello world!" />);
+    expect(screen.getByText('My test PR')).toBeInTheDocument();
+  });
+});
