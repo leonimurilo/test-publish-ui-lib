@@ -46,9 +46,10 @@ jobs:
     needs: [tests, eslint]
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.CI_GITHUB_TOKEN }} # would authorize pushes to protected branches, given you don't have "Include administrators" set in the protected branch's settings
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
