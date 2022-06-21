@@ -1,3 +1,10 @@
+## [2.5.3](https://github.com/leonimurilo/test-publish-ui-lib/compare/v2.5.2...v2.5.3) (2022-06-21)
+
+
+### Bug Fixes
+
+* **release:** Fix semantic-release git plugin config ([ebd9488](https://github.com/leonimurilo/test-publish-ui-lib/commit/ebd9488d3ff4d315503e38c940f36e1d2fa9e40f))
+
 ## [2.5.2](https://github.com/leonimurilo/test-publish-ui-lib/compare/v2.5.1...v2.5.2) (2022-06-21)
 
 
