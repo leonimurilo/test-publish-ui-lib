@@ -49,7 +49,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }} # would authorize pushes to protected branches, given you don't have "Include administrators" set in the protected branch's settings
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -61,6 +61,7 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }} # https://github.com/semantic-release/github/issues/175#issuecomment-757448750
 
   publish-storybook:
     runs-on: ubuntu-latest
