@@ -1,3 +1,10 @@
+# [2.6.0](https://github.com/leonimurilo/test-publish-ui-lib/compare/v2.5.3...v2.6.0) (2022-06-22)
+
+
+### Features
+
+* **footer:** Update footer ui ([8234260](https://github.com/leonimurilo/test-publish-ui-lib/commit/823426066634a30c003c2e13130c26abfcc07607))
+
 ## [2.5.3](https://github.com/leonimurilo/test-publish-ui-lib/compare/v2.5.2...v2.5.3) (2022-06-21)
 
 
