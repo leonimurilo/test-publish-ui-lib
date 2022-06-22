@@ -13,6 +13,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "rollup": "rollup -c",
+    "rollup:watch": "rollup -c --watch --watch.onEnd=\"yalc push\"",
     "commit": "git-cz",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -23,8 +24,7 @@
     "lint": "eslint --config ./.eslintrc.json  .",
     "lint:fix": "eslint --config ./.eslintrc.json  . --fix",
     "format": "prettier --write --config ./.prettierrc",
-    "link": "npm link",
-    "link:list": "npm ls -g --depth=0 --link=true"
+    "yalc:push": "yalc push"
   },
   "author": "",
   "license": "ISC",
@@ -88,7 +88,8 @@
     "semantic-release": "^19.0.3",
     "style-loader": "^3.3.1",
     "typescript": "^4.7.3",
-    "typescript-plugin-css-modules": "^3.4.0"
+    "typescript-plugin-css-modules": "^3.4.0",
+    "yalc": "^1.0.0-pre.53"
   },
   "peerDependencies": {
     "@patternfly/react-core": "^4.221.3",
