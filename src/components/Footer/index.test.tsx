@@ -12,6 +12,6 @@ describe('Footer', () => {
 
   it('renders the title correctly', () => {
     render(<Footer label="Hello world!" />);
-    expect(screen.getByText('My test PR')).toBeInTheDocument();
+    expect(screen.getByText('My test SYMLINK Test WATCH POWER 57')).toBeInTheDocument();
   });
 });
