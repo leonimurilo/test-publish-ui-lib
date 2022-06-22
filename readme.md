@@ -2,8 +2,6 @@
 
 This library contains React UI components for Learning platforms.
 
-This project uses Typescript, Jest, react-testing library, SASS, CSS Modules, Storybook and rollup. ESLint and prettier are also setup.
-
 ## Components documentation
 
 https://leonimurilo.github.io/test-publish-ui-lib
@@ -130,3 +128,7 @@ Lastly, one more action job runs to build and publish Storybook documentation to
 | lint:fix         | Run ESLint report and make all possible fixes                                |
 | format           | Format code using prettier                                                   |
 | yalc:push        | Pushes build to yalc local repository (local development)                    |
+
+## TechStack
+
+This project uses Typescript, Jest, react-testing library, SASS, CSS Modules, Storybook and rollup. ESLint and prettier are also setup.
