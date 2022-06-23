@@ -67,9 +67,10 @@ npm run rollup:watch
 
 > Under the hood the command above is watching and building the library, and when that finished, it automatically performs `yalc push`
 
-#### 3) Go to your **app directory** and run the following command (can be added as npm script):
+#### 3) Go to your **app directory** and run the following command in the host machine (commands can be later added as npm script):
 
 ```bash
+# yalc add has to be issued on the host machine, not in the container!
 yalc add leoni-test-publish-ui-lib && npm install
 ```
 
