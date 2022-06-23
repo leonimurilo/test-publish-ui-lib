@@ -1,3 +1,10 @@
+# [2.7.0](https://github.com/leonimurilo/test-publish-ui-lib/compare/v2.6.0...v2.7.0) (2022-06-23)
+
+
+### Features
+
+* **Header:** Add Header component ([521f20d](https://github.com/leonimurilo/test-publish-ui-lib/commit/521f20dac382a0fc1fb215ce33bd78e2dd2abd04))
+
 # [2.6.0](https://github.com/leonimurilo/test-publish-ui-lib/compare/v2.5.3...v2.6.0) (2022-06-22)
 
 
